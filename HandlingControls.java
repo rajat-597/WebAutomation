@@ -116,6 +116,19 @@ public class HandlingControls {
 		weekendto.sendKeys(Keys.ARROW_DOWN);
 		Thread.sleep(2000);
 		weekendto.sendKeys(Keys.ENTER);
+		
+		driver.findElement(By.xpath("//*[@id=\"footauto\"]/app-root/app-onboarding-user-details/section/div[2]/div/div[1]/button")).click();
+	     Thread.sleep(2000);
+	     
+	     driver.navigate().to("https://learning.edureka.co/my-profile");
+	     Thread.sleep(2000);
+	     
+	     driver.findElement(By.xpath("//*[@id=\"footauto\"]/app-root/app-profile-main/app-header/header/nav/div/div[3]/ul/li[6]/div/button")).click();
+	     Thread.sleep(1000);
+	     
+	     driver.findElement(By.xpath("//*[@id=\"footauto\"]/app-root/app-profile-main/app-header/header/nav/div/div[3]/ul/li[6]/div/ul/li[9]/a")).click();
+	     Thread.sleep(1000);
+
 	}
 
 }
